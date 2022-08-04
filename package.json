@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-frontend": "cd front-end && npm i && npm run build",
+    "ïnstall-backend":" cd back-end && npm i && npm start",
+    "heroku-postbuild": "npm run install-frontend && npm run install-backend"
   },
   "author": "",
   "license": "ISC"
